@@ -14,9 +14,9 @@ Install [`music21`](https://web.mit.edu/music21/doc/usersGuide/usersGuide_01_ins
 pip install music21
 ```
 
-Install a XML reader, for example the free software [`Musescore`](https://musescore.org/en).  
+Install a MusicXML reader, for example the free software [`Musescore`](https://musescore.org/en).  
   
-Configure `music21` so that it recognizes your XML reader. There are two ways to do that :
+Configure `music21` so that it recognizes your MusicXML reader. There are two ways to do that :
 
 #### 1st method
 
@@ -26,16 +26,16 @@ Run :
 python3 -m music21.configure
 ```
 
-This command will ask you the path to your XML reader.  
+This command will ask you the path to your MusicXML reader.  
 However, if it doesn't, use the 2nd method.
 
 #### 2nd method
 
-Run the following Python script by replacing `'ABSOLUTE_PATH_TO_YOUR_XML_READER'` by the aboslute path to your XML reader (e.g. `'/home/julia/.local/bin/MuseScore-4.2.1.240230938-x86_64.AppImage'`).  
+Run the following Python script by replacing `'ABSOLUTE_PATH_TO_YOUR_MUSICXML_READER'` by the aboslute path to your MusicXML reader (e.g. `'/home/julia/.local/bin/MuseScore-4.2.1.240230938-x86_64.AppImage'`).  
 
 ```py
 from music21 import *
-environment.set('musicxmlPath', 'ABSOLUTE_PATH_TO_YOUR_XML_READER')
+environment.set('musicxmlPath', 'ABSOLUTE_PATH_TO_YOUR_MUSICXML_READER')
 ```
 
 ## Usage
@@ -45,4 +45,4 @@ Run :
 ```sh
 python3 main.py
 ```
-Your XML reader should open and display a random twelve-tone series.  
+Your MusicXML reader should open and display a random twelve-tone series.  
