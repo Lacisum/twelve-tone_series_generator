@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from music21 import *
 import random
 
